@@ -37,3 +37,23 @@ randomer_number = random.choice(random_list)
 
 print(random_list)
 print(randomer_number)
+
+# Number modules for decimals
+from decimal import Decimal
+
+two_decimal_points = Decimal("0.2") + Decimal("0.69")
+print(two_decimal_points)
+four_decimal_points = Decimal("0.53") * Decimal("0.65")
+print(four_decimal_points)
+
+# Datetimes
+
+birthday = datetime(1990, 2, 5, 15, 30)
+print(birthday)
+print(datetime.now())
+
+parsed_date = datetime.strptime("Oct 28, 2023", "%b %d, %Y")
+print(parsed_date.month)
+
+date_string = datetime.strftime(datetime.now(), "%b %d, %Y")
+print(date_string)
